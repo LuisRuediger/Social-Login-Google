@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Formulário Animado</title>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
   </head>
   <body>
     <section class="form-section">
@@ -23,7 +26,16 @@
           </div>
           <button type="submit" class="button-login">Login</button>
         </form>
+        <div id="buttonDiv" class="input-block"></div>
       </div>
+
+      <p id="fullName"></p>
+      <p id="sub"></p>
+      <p id="given_name"></p>
+      <p id="family_name"></p>
+      <p id="email"></p>
+      <p id="verified_email"></p>
+      <img id="picture" />
     </section>
 
     <script src="script.js"></script>
